@@ -1,4 +1,6 @@
-FROM nginx
+FROM            nginx
+MAINTAINER      Anthony Stanton <anthony.stanton@gmail.com>
+
 RUN mkdir -p /etc/nginx/conf.d
 
 ADD http://ftp.debian.org/debian/pool/main/s/s3cmd/s3cmd_1.5.0~rc1-2_all.deb /tmp/s3cmd_1.5.0~rc1-2_all.deb
